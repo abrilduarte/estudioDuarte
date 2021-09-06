@@ -28,19 +28,19 @@
         display: grid;
 
         @include mq320min {
-            @include grid(1, 100%);
+                grid-template-columns: repeat(1, 100%);
                 column-gap: 5px;
                 row-gap: 5px;
             }
 
         @include mq600min {
-            @include grid(2, 50%);
-            column-gap: 7px;
-            row-gap: 7px;
+                grid-template-columns: repeat(2, 50%);
+                column-gap: 7px;
+                row-gap: 7px;
             }   
         
         @include mq768min {
-            @include grid(3, 34%);
+                grid-template-columns: repeat(3, 34%);
                 column-gap: 20px;
                 row-gap: 20px;
         }   
