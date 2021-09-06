@@ -31,6 +31,17 @@
     }
 }
 
+@mixin mq930min {
+    @media (min-width: $tablet930) {
+        @content;
+    }
+}
+@mixin mq930max {
+    @media (max-width: $tablet930) {
+        @content;
+    }
+}
+
 @mixin mq1200min {
     @media (min-width: $desktop) {
         @content;
@@ -40,11 +51,4 @@
     @media (max-width: $desktop) {
         @content;
     }
-}
-
-@mixin grid($columnas, $espaciado) {
-    display: grid;
-    grid-template-columns: repeat($columnas, 1fr);
-    gap: $espaciado;
-
 }

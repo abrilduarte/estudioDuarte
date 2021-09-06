@@ -33,6 +33,7 @@ font-size: 2.5rem;
 .tituloEntrada2{
 font-family: $Principal;
 font-size: 2.5rem;
+margin-bottom: 2rem;
 }
 
 .textoEntrada1 {
@@ -67,7 +68,8 @@ margin-bottom: 0;
 }
 
 .textoEntrada2 {
-font-size: 1.9rem
+font-size: 1.9rem;
+font-family: $Texto;
 }
 
 .boton {
