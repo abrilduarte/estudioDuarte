@@ -1,0 +1,27 @@
+/**Nosotros**/
+
+.sobreNosotros {
+    @include mq768min {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+    }
+    .nosotros1 {
+    width: 100%;
+    }
+    
+    .tituloNosotros {
+    font-family: $Principal;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 6rem;
+    }
+    
+    .textoNosotros {
+    margin-top: 0;
+    font-family: $Texto;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    }
+    

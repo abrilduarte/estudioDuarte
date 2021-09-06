@@ -1,0 +1,50 @@
+@mixin mq320min {
+    @media (min-width: $telefono) {
+        @content;
+    }
+}
+@mixin mq320max {
+    @media (max-width: $telefono) {
+        @content;
+    }
+}
+
+@mixin mq600min {
+    @media (min-width: $tablet600) {
+        @content;
+    }
+}
+@mixin mq600max {
+    @media (max-width: $tablet600) {
+        @content;
+    }
+}
+
+@mixin mq768min {
+    @media (min-width: $tablet768) {
+        @content;
+    }
+}
+@mixin mq768max {
+    @media (max-width: $tablet768) {
+        @content;
+    }
+}
+
+@mixin mq1200min {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+@mixin mq1200max {
+    @media (max-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin grid($columnas, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+
+}

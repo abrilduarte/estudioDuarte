@@ -1,0 +1,138 @@
+/**Menu Principal**/
+.contenidoPrincipal {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include mq768min {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    column-gap: 5rem;
+    }
+}
+
+.entrada {
+margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+border: none;
+margin-bottom: 0;
+}
+
+.tituloEntrada {
+font-family: $Principal;
+font-size: 3rem;
+margin-top: 6rem;
+
+}
+
+.tituloEntrada1 {
+font-family: $Principal;
+font-size: 2.5rem;
+}
+.tituloEntrada2{
+font-family: $Principal;
+font-size: 2.5rem;
+}
+
+.textoEntrada1 {
+font-family: $Texto;
+font-size: 2.3rem;
+line-height: 2.6rem;
+font-weight: 500;
+}
+
+.entrada1 {
+width: 100%;
+}
+
+.entradaCursos {
+font-family: $Principal;
+font-size: 3rem;
+margin-top: 6rem;
+list-style: none;
+
+@include mq768min {
+    margin-left: 4rem;
+}
+}
+
+.widgetCurso {
+margin-bottom: 2rem;
+}
+
+.widgetCurso:last-of-type {
+border: none;
+margin-bottom: 0;
+}
+
+.textoEntrada2 {
+font-size: 1.9rem
+}
+
+.boton {
+display: block;
+font-family: $Principal;
+color: $Blanco;
+text-align: center;
+padding: 1rem 3rem;
+font-size: 1.8rem;
+text-transform: uppercase;
+margin-bottom: 2rem;
+font-weight: 700;
+border: none;
+transition: 0.5s;
+
+@include mq768max {
+    display: inline-block;
+
+}
+&:hover {
+background-color: $Gris2;
+color: $Blanco;
+cursor: pointer;
+}
+}
+
+
+.botonPrimero,
+.botonSegundo {
+background-color: $Negro;
+}
+
+.botonTercero {
+background-color: $Primario;
+}
+
+.cursos {
+list-style:none
+}
+
+.datosContacto {
+font-family: $Principal;
+font-size: 1.8rem;
+text-align: center;
+}
+
+.footer {
+background-color: $Negro;
+padding-bottom: 3rem;
+margin-top: 2rem;
+
+@include mq768min {
+background-color: $Negro;
+padding-bottom: 3rem;
+margin-top: 2rem;
+}
+}
+
+/**Video**/
+video {
+max-width: 100%;
+}
+
+.video {
+@include mq768min {
+    max-width: 100%;
+}
+}

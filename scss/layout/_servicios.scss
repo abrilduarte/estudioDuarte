@@ -1,0 +1,34 @@
+/**Servicios**/
+
+.nuestrosServicios {
+    font-family: $Principal;
+    font-size: 3rem;
+    margin-top: 6rem;
+    }
+    
+    .tituloProceso {
+    font-family: $Principal;
+    font-size: 2.8rem;
+    }
+    
+    .primerProceso,
+    .segundoProceso,
+    .tercerProceso,
+    .cuartoProceso {
+    font-family: $Principal;
+    font-size: 2.4rem;
+    color: $Negro;
+    
+    }
+    
+    .textoProceso {
+    font-family: $Texto;
+    color: $Negro;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    }
+    
+    .listaProceso {
+    list-style: none;
+    padding-inline-start: 0;
+    }

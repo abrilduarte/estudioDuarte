@@ -1,0 +1,84 @@
+/**Contacto**/
+
+.logo.logo-contacto {
+    font-weight: 650;
+    }
+    
+    a.text-decoration-none.navegacionEnlace {
+    color: $Blanco;
+    }
+    
+    
+    .tituloContacto {
+    font-family: $Principal;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 4rem;
+    }
+    
+    form {
+    width: 600px;
+    margin: auto;
+    background: rgba(0,0,0,0.5);
+    padding: 1.5rem 2.5rem;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    }
+    
+    input, textarea, select {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 1.7rem;
+    border: none;
+    font-family: monospace;
+    }
+    
+    textarea {
+    max-width: 70rem;
+    min-height: 10rem;
+    max-height: 20rem;
+    
+    }
+    
+    select {
+    color: $Gris2;
+    }
+    
+    .opcion {
+    color: $Negro;
+    }
+    
+    .botonCampo {
+    background: $Negro;
+    color: $Blanco;
+    font-family: $Principal;
+    font-size: 2rem;
+    border-radius: 10px;
+    }
+    
+    .botonCampo:hover {
+    cursor: pointer;
+    }
+    
+    form {
+        @include mq768max {
+        width: 100%;
+    }
+    }
+    
+    .modal-title {
+    font-family: $Principal;
+    font-size: 2rem;
+    }
+    
+    .modal-body {
+    font-family: $Texto;
+    font-size: 1.8rem;
+    }
+    .btn {
+    font-size: 1.8rem;
+    font-family: $Principal;
+    }

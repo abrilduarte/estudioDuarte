@@ -1,0 +1,121 @@
+/**General**/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%
+}
+
+*, *:before, *:after {
+     box-sizing: inherit;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.2;
+}
+
+body {
+    color: $Negro;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 0;
+    font-family: $Principal;
+    padding: 0;
+    @include mq768max {
+            font-size: 2rem;
+            line-height: 2.5rem;
+            text-align: center;
+            height: 100%;
+    }
+}
+
+
+a {
+    text-decoration: none;
+    color: transparent;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    margin: 0 auto auto;
+    width: 60%;
+    @include mq768max {
+            margin: 0 auto;
+            width: 90%;
+    }
+
+    @include mq1200max{        
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+ol, ul {
+    @include mq768max {
+        padding-inline-start: 0;
+    }
+}
+
+/**Encabezado**/
+
+.header {
+    background-image: url(../img/banner3.jpg);
+}
+
+header {
+    height: 28rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+
+.logo {
+    font-family: $Titulo;
+    color: $Blanco;
+    font-size: 4rem;
+    @include mq768max {
+
+            font-size: 3rem;
+    }
+}
+
+
+.barra {
+    padding-top: 5rem;
+    @include mq768min {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    }
+}
+
+.navegacion {
+    font-family: $Principal;
+    display: flex;
+    gap: 1rem;
+    @include mq768max {
+            display: block;
+            font-size: 1.3rem;
+            text-align: center;
+    }
+}
+
+
+.navegacionEnlace {
+    text-align: center;
+    font-size: 1.8rem;
+    color: $Blanco;
+
+    @include mq768max {
+
+        display: block;
+        font-size: 1.5rem;
+        text-align: center;
+        
+    }
+}
